@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LeetCode.Questions
+namespace LeetCode.Questions.Easy
 {
     public class AddBinary
     {
@@ -18,8 +18,8 @@ namespace LeetCode.Questions
 
             for(int i = 0; i < Math.Max(a.Length, b.Length); i++)
             {
-                var digitA = (i < a.Length) ? a[i] - '0' : 0;
-                var digitB = (i < b.Length) ? b[i] - '0' : 0;
+                var digitA = i < a.Length ? a[i] - '0' : 0;
+                var digitB = i < b.Length ? b[i] - '0' : 0;
 
                 var total = digitA + digitB + carry;
                 var mod = (total % 2).ToString();

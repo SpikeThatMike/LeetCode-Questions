@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LeetCode.Questions
+namespace LeetCode.Questions.Hard
 {
     public class MedianOfTwoSortedArrays
     {
@@ -15,7 +15,7 @@ namespace LeetCode.Questions
             int count = sortedList.Count();
             if (count % 2 == 0)
             {
-                var sum = sortedList.ElementAt((count / 2) - 1) + sortedList.ElementAt(count / 2);
+                var sum = sortedList.ElementAt(count / 2 - 1) + sortedList.ElementAt(count / 2);
                 return (double)sum / 2;
             }
             else

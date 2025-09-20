@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LeetCode.Questions
+namespace LeetCode.Questions.Easy
 {
     public class PalindromeNumber
     {
@@ -18,7 +18,7 @@ namespace LeetCode.Questions
             while (x > 0)
             {
                 int digit = x % 10;
-                reversed = (reversed * 10) + digit;
+                reversed = reversed * 10 + digit;
                 x /= 10;
             }
             if (original != reversed) return false;

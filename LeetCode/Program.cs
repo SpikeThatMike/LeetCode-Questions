@@ -1,6 +1,4 @@
-﻿
-
-using LeetCode.Questions;
+﻿using LeetCode.Questions.Medium;
 
 //RomanToIntegar romanToIntegar = new RomanToIntegar();
 //Console.WriteLine(romanToIntegar.RomanToInt("III")); // Output: 3

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LeetCode.Questions
+namespace LeetCode.Questions.Hard
 {
     public class TextJustification
     {
@@ -16,7 +16,7 @@ namespace LeetCode.Questions
             for (int i = 0; i < words.Length; i++)
             {
                 string word = words[i];
-                bool isLastLine = (i + 1 == words.Length);
+                bool isLastLine = i + 1 == words.Length;
                 
                 if (currentLine.Length + word.Length > maxWidth)
                 {

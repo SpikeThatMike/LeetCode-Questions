@@ -1,6 +1,6 @@
 ﻿using System.Text.RegularExpressions;
 
-namespace LeetCode.Questions
+namespace LeetCode.Questions.Medium
 {
     public class ValidateIPAddress
     {
